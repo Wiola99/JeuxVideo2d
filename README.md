@@ -6,6 +6,7 @@ This project was created for the Isaac’s Pante course named “Jeux Video 2D�
 # Introduction
 
 The game is created in the ink scripting language. It is a language built around the idea of marking up pure-text with flow in order to produce interactive scripts.
+In order to play, please download the zip file and open index.html file in your browser.
 The final outcome is presented in the form of a website amd can be opened in any browser. 
 
 # Project description
