@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
+@import url('https://fonts.googleapis.com/css?family=Eagle+Lake');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    background: white;
+}
+
+body.dark {
+    background: black;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30pt;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 14pt;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #BBB;
+}
+
+.dark h2 {
+    color: #666;
+}
+
+.header {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+h3.written-in-ink {
+    font-size: 9pt;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 700;
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: white;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    top: 0;
+}
+
+.dark h3.written-in-ink {
+    background: black;
+}
+
+
+/* Seems necessary to make iframes work on itch.io on mobile iOS :-( */
+.outerContainer {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 4em;
+    background: white;
+}
+
+.dark .container {
+    background: black;
+}
+
+p {
+    font-size: 13pt;
+    color: #888;
+    line-height: 1.7em;
+    font-weight: lighter;
+}
+
+a {
+    font-weight: 700;
+    color: #b97c2c;
+    font-family: sans-serif;
+    transition: color 0.6s;
+    text-decoration: none;
+}
+
+.dark a {
+    color: #cc8f1a;
+    transition: color 0.6s;
+}
+
+
+a:hover {
+    color: black;
+    transition: color 0.1s;
+}
+
+.dark a:hover {
+    color: white;
+}
+
+strong {
+    color: black;
+    font-weight: bold;
+}
+
+.dark strong {
+    color: white;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.container .hide {
+    opacity: 0.0;
+}
+
+.container .invisible {
+    display: none;
+}
+
+.container * {
+    opacity: 1.0;
+    transition: opacity 1.0s;
+}
+
+p.choice {
+    text-align: center;
+    line-height: 1.7em;
+}
+
+/* first choice */
+:not(.choice) + .choice {
+    padding-top: 1em; 
+}
+
+
+p.choice a {
+    font-size: 15pt;
+}
+
+/* Built in class if you want to write:
+     The End # CLASS: end
+*/
+.end {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dark .end {
+    color: white;
+}
+
+.wronganswer{
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+.rightanswer{
+    font-weight: bold;
+    font-size: 30px;
+    color: green;
+}
+
+.description2{
+    font-size: 14pt;
+    font-style: italic;
+    font-family: fantasy;
+    font-weight: lighter;
+    color: rgb(77, 75, 75);
+}
+
+.question{
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 93%;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal normal bold 21px/1 undefined;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: -webkit-linear-gradient(-90deg, rgba(224,102,102,1) 0, rgba(246,178,107,0.7) 100%);
+  background: -moz-linear-gradient(180deg, rgba(224,102,102,1) 0, rgba(246,178,107,0.7) 100%);
+  background: linear-gradient(180deg, rgba(224,102,102,1) 0, rgba(246,178,107,0.7) 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+.description{
+    -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: italic normal normal 18px/1 "lato", Helvetica, sans-serif;
+  color: rgba(90,90,90,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  word-spacing: 4px;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.2) ;
+}
+
+.legenda {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font-family: "Eagle Lake", cursive;
+    color: rgba(114,111,111,1);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    letter-spacing: 1px;
+    word-spacing: 11px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.2) ;
+}
+  
+
